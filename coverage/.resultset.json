@@ -1,0 +1,24 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/home/ppibburr/git/gir_ffi-webkit/lib/webkit.rb": [
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1
+      ],
+      "/home/ppibburr/git/gir_ffi-webkit/lib/webkit/common/hard_code.rb": [
+        null
+      ]
+    },
+    "timestamp": 1355854388
+  }
+}

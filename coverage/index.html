@@ -1,106 +1,206 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-    <title>Gir Ffi Webkit C0 Coverage Information - RCov</title>
-    <link href="screen.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="print.css" media="print" rel="stylesheet" type="text/css" />
-    
-    <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
-    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
-    <script type="text/javascript" src="rcov.js"></script>
+    <title>Code coverage for Gir ffi-webkit</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src='./assets/0.7.1/application.js' type='text/javascript'></script>    
+    <link href='./assets/0.7.1/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/png" href="./assets/0.7.1/favicon_red.png" />
+    <link rel="icon" type="image/png" href="./assets/0.7.1/favicon.png" />
   </head>
+  
   <body>
-    <h1>Gir Ffi Webkit C0 Coverage Information - RCov</h1>
-    
-
-    <noscript><style type="text/css">.if_js { display:none; }</style></noscript>
-
-    <div class="filters if_js">
-      <fieldset>
-        <label>File Filter:</label>
-        <select id="file_filter" class="filter">
-          <option value="all_files">Show All</option>
-          <option value="lib">lib/</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <label>Code Coverage Threshold:</label>
-        <select id="coverage_filter" class="filter">
-          <option value="all_coverage">Show All</option>
-          <option value="10">&lt; 10% Coverage</option><option value="20">&lt; 20% Coverage</option><option value="30">&lt; 30% Coverage</option><option value="40">&lt; 40% Coverage</option><option value="50">&lt; 50% Coverage</option><option value="60">&lt; 60% Coverage</option><option value="70">&lt; 70% Coverage</option><option value="80">&lt; 80% Coverage</option><option value="90">&lt; 90% Coverage</option><option value="100">&lt; 100% Coverage</option>
-          <option value="110">= 100% Coverage</option>
-        </select>
-      </fieldset>
+    <div id="loading">
+      <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
+    <div id="wrapper" style="display:none;">
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-12-18T13:13:09-05:00">2012-12-18T13:13:09-05:00</abbr></div>
+      <ul class="group_tabs"></ul>
+
+      <div id="content">
+        <div class="file_list_container" id="AllFiles">
+  <h2>
+    <span class="group_name">All Files</span>
+    (<span class="covered_percent"><span class="red">71.43%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="red">
+         0.35
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="AllFiles"></a>
+  <div>
+    <b>2</b> files in total.
+    <b>7</b> relevant lines. 
+    <span class="green"><b>5</b> lines covered</span> and
+    <span class="red"><b>2</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#01ae005d959f7acd95bdf497dffd4618cc3e339a" class="src_link" title="lib/webkit.rb">lib/webkit.rb</a></td>
+        <td class="red strong">71.43 %</td>
+        <td>12</td>
+        <td>7</td>
+        <td>5</td>
+        <td>2</td>
+        <td>0.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#9101fbce98f1fe39b023c1ec27106cf48ea4edf8" class="src_link" title="lib/webkit/common/hard_code.rb">lib/webkit/common/hard_code.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+        
+      </div>
     
-    <div class="report_table_wrapper">
-      <table class='report' id='report_table'>
-        <thead>
-          <tr>
-            <th class="left_align">Name</th>
-            <th class="right_align">Total Lines</th>
-            <th class="right_align">Lines of Code</th>
-            <th class="left_align">Total Coverage</th>
-            <th class="left_align">Code Coverage</th>
-          </tr>
-        </thead>
-        <tfoot>
-          <tr>
-            <td class="left_align">TOTAL</td>
-            <td class='right_align'><tt>12</tt></td>
-            <td class='right_align'><tt>10</tt></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class=''>66.67%</tt></div>
-          <div class="percent_graph">
-            <div class="covered" style="width:67px"></div>
-            <div class="uncovered" style="width:33px"></div>
-          </div></td>
-            <td class="left_align"><div class="percent_graph_legend"><tt class='coverage_total'>60.00%</tt></div>
-          <div class="percent_graph">
-            <div class="covered" style="width:60px"></div>
-            <div class="uncovered" style="width:40px"></div>
-          </div></td>
-          </tr>
-        </tfoot>
-        <tbody>
-          
-            <tr class="all_files all_coverage 70 80 90 100 lib even">
-              <td class="left_align"><a href="lib-webkit_rb.html">lib/webkit.rb</a></td>
-              <td class='right_align'><tt>12</tt></td>
-              <td class='right_align'><tt>10</tt></td>
-              <td class="left_align"><div class="percent_graph_legend"><tt class=''>66.67%</tt></div>
-          <div class="percent_graph">
-            <div class="covered" style="width:67px"></div>
-            <div class="uncovered" style="width:33px"></div>
-          </div></td>
-              <td class="left_align"><div class="percent_graph_legend"><tt class=''>60.00%</tt></div>
-          <div class="percent_graph">
-            <div class="covered" style="width:60px"></div>
-            <div class="uncovered" style="width:40px"></div>
-          </div></td>
-            </tr>
-          
-        </tbody>
-      </table>
+      <div id="footer">
+        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.7.1 
+        and simplecov-html v0.7.1<br/>
+        using Unit Tests
+      </div>
+    
+      <div class="source_files">
+      
+        <div class="source_table" id="01ae005d959f7acd95bdf497dffd4618cc3e339a">
+  <div class="header">
+    <h3>lib/webkit.rb</h3>
+    <h4><span class="red">71.43 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
-    
-    <p>Generated on Mon Dec 17 23:51:21 -0500 2012 with <a href="http://github.com/relevance/rcov">rcov 0.9.7.1</a></p>
-
-    <script type="text/javascript">
-      $(document).ready(function(){$("#report_table").tablesorter({widgets: ['zebra'], textExtraction: 'complex'});});
-      $('.filter').change(function(){
-        ff = $('#file_filter').val();
-        cf = $('#coverage_filter').val();
-        $('table#report_table tbody tr').each(function(i){ 
-          if ((this.className.split(" ").indexOf(ff) > -1) && (this.className.split(" ").indexOf(cf) > -1)) {
-            this.style.display = "";
-          } else {
-            this.style.display = "none";
-          };
-          restripe();
-        })
-      })
-    </script>
-
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">if !defined?(WebKit)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  begin</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    require &quot;gir_ffi&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  rescue LoadError</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    require &quot;rubygems&quot;  </code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    require 'gir_ffi'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  GirFFI.setup :WebKit    </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require File.join(File.dirname(__FILE__),&quot;webkit&quot;,&quot;common&quot;,&quot;hard_code.rb&quot;)</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="9101fbce98f1fe39b023c1ec27106cf48ea4edf8">
+  <div class="header">
+    <h3>lib/webkit/common/hard_code.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># nothing neeed yet</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+      </div>
+    </div>
   </body>
 </html>
